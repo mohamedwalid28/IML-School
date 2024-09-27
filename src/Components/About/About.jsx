@@ -6,6 +6,9 @@ import about_img3 from '../../assets/images/wygodne-szkolenia-BHP-odbywajace-sie
 import about_img4 from '../../assets/images/angga-krishna-mentoring-scaled-e1597491793526.jpg'
 import dwedar from '../../assets/images/dwedar.jpg'
 import mohamed from '../../assets/images/Mohamed Elmasry.jpeg'
+import sara from '../../assets/images/sara.jpeg'
+import eslam from '../../assets/images/eslam.jpeg'
+import kareem from '../../assets/images/kareem.jpeg'
 
 export default function About() {
 
@@ -108,6 +111,24 @@ export default function About() {
           <img src={mohamed} alt="" className=' rounded rounded-circle' width='220' height='220' />
           <h5 className='mt-3 fw-bolder'>Mohamed Elmasry</h5>
           <p className='bg-main text-white shadow shadow-lg '>Web Developer & Security Specialist</p>
+
+        </div>
+        <div className="col-md-3">
+          <img src={sara} alt="" className=' rounded rounded-circle' width='220' height='220' />
+          <h5 className='mt-3 fw-bolder'>Sara Atallah</h5>
+          <p className='bg-main text-white shadow shadow-lg '>Social media specialist</p>
+
+        </div>
+        <div className="col-md-3">
+          <img src={eslam} alt="" className=' rounded rounded-circle' width='220' height='220' />
+          <h5 className='mt-3 fw-bolder'>Eslam Koryem</h5>
+          <p className='bg-main text-white shadow shadow-lg '>Graphic Designer - Photographer</p>
+
+        </div>
+        <div className="col-md-3">
+          <img src={kareem} alt="" className=' rounded rounded-circle' width='220' height='220' />
+          <h5 className='mt-3 fw-bolder'>Dr Kareem Yehia</h5>
+          <p className='bg-main text-white shadow shadow-lg '>Lecturer of Business Administration-Business School-Cairo University.</p>
 
         </div>
       </div>
