@@ -105,7 +105,7 @@ export default function About() {
         <div className="col-md-3">
           <img src={dwedar} alt="" className=' rounded rounded-circle' width='220' height='220' />
           <h5 className='mt-3 fw-bolder'>Dr Mahmoud Dwedar</h5>
-          <p className='bg-main text-white shadow shadow-lg '>CEO & Founder of IML Academy</p>
+          <p className='bg-main text-white shadow shadow-lg '>CEO & Founder of IML Egypt - Dr Entrepreuneur - Business Outing</p>
         </div>
         <div className="col-md-3">
           <img src={mohamed} alt="" className=' rounded rounded-circle' width='220' height='220' />
