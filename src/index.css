@@ -1,0 +1,659 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap');
+:root
+{
+    --main-color:#198754;
+    --second-color:#183661;
+    --third-color:#14a3b628;
+    --light-color:#f0f3f2;
+    --shadow: rgba(145,158,171,.2) 0px 2px 4px -1px,rgba(145,158,171,.14) 0px 4px105px 0px,rgba(145,158,171,.12) 0px 1px 10px 0px;
+    --font-family: Poppins,sans-serif;
+    --rating-color:#ffc908;
+}
+body{
+    font-family: var(--font-family) !important;
+}
+.rating-color
+{
+    color: var(--rating-color);
+}
+.second-color
+{
+    color: var(--second-color);
+}
+.cursor-pointer
+{
+    cursor: pointer;
+}
+a , a:hover{
+    color: black;
+    text-decoration: none;
+}
+/* .product:hover
+{
+    cursor: pointer;
+}
+.product .btn 
+{
+    transition: transform 1s , opacity 1s;
+    transform: translateY(100%);
+    opacity: 0;
+}
+.product:hover .btn 
+{
+    opacity: 1;
+    transform: translateY(0%);
+} */
+
+
+
+
+/* -----------------------------------BUTTON UP---------------------------------------- */
+.scroll-btn-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+.scroll-btn {
+    z-index: 999;
+    padding: 8px 11px 5px;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 50% !important;
+    cursor: pointer;
+  }
+/* -----------------------------------END BUTTON UP---------------------------------------- */
+
+
+
+
+.font-sm
+{
+    font-size: 14px;
+}
+.font-md
+{
+    font-size: 19px;
+    line-height: 2rem;
+}
+.text-main
+{
+    color: var(--main-color);
+}
+.text-main-hover{
+    color: white;
+}
+.text-main-hover:hover{
+    color: var(--main-color);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+.bg-main
+{
+    background-color: var(--main-color) !important;
+}
+/* .bg-main-lower-opacity
+{
+    background-color: var(--main-color) !important;
+    opacity: 0.8;
+} */
+.bg-second
+{
+    background-color: var(--second-color) !important;
+}
+.bg-third
+{
+    background-color: var(--main-color) !important;
+    /* box-shadow: #198754 inset 100px 0px 80px 80px; */
+    /* box-shadow: 0 24px 38px rgba(81,107,117,.21); */
+    box-shadow: -200px -49px 104px -3px rgba(20,222,67,0.61) inset;
+    -webkit-box-shadow: -200px -49px 104px -3px rgba(20,222,67,0.61) inset;
+    -moz-box-shadow: -200px -49px 104px -3px rgba(20,222,67,0.61) inset;
+}
+.bg-main-light 
+{
+    background-color: var(--light-color) !important;
+}
+.text-center{
+    text-align: center;
+}
+.text-main-light 
+{
+    color: #08444F;
+}
+.text-larger{
+    font-size: 45px;
+    font-weight: 900;
+}
+.icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--light-color);
+    color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon:hover{
+    background-color: var(--main-color);
+    color: var(--light-color);
+}
+/* .navbar{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+} */
+.navbar-nav .nav-item ul li:hover{
+    color: #08444F !important;
+}
+.navbar-nav .nav-item:hover{
+    /* color: white !important; */
+    background-color: var(--main-color);
+    border-radius: 10px;
+    transition: 0.3s;
+    /* text-decoration: underline; */
+}
+.navbar-nav .nav-item .nav-link{
+    color:black;
+    font-weight: 600;
+}
+.navbar-nav .nav-item .nav-link:hover{
+    color:white;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: var(--main-color) !important;
+    color: white !important;
+    /* border-bottom: 2px solid #111; */
+    border-radius: 10px;
+}
+.border-main{
+    border: var(--main-color) 2px solid;
+}
+.border-main-bottom{
+    border-bottom: var(--main-color) 5px solid;
+}
+.border-main-bottom-thin{
+    border-bottom: var(--main-color) 3px solid;
+}
+.box-hover{
+    transition: all ease-in-out 0.6s;
+    border-radius:10px;
+}
+.box-hover:hover{
+    background-color: var(--second-color);
+    box-shadow: 5px 200px 245px -15px rgba(20,222,67,0.61) inset;
+    -webkit-box-shadow: 5px 200px 245px -15px rgba(20,222,67,0.61) inset;
+    -moz-box-shadow: 5px 200px 245px -15px rgba(20,222,67,0.61) inset;
+}
+.box-hover:hover i ,.box-hover:hover h3 ,.box-hover:hover p{
+    color: var(--light-color);
+}
+.box-hover:hover .button-special{
+    background-color: var(--light-color);
+    color:black;
+    transition: all ease-in-out 0.5s;
+
+}
+.lines span {
+    display: flex;
+    margin: auto;
+    width: 70px;
+    margin-bottom: 4px;
+    border-width: 1px 0 0;
+    border-style: solid;
+    border-color: var(--main-color);
+    text-align: center;
+}
+.lines .tall {
+    width: 170px;
+}
+.div-underline{
+    transition: all .35s;
+}
+.div-underline:hover{
+    box-shadow: 0 24px 38px rgba(81,107,117,.21);
+}
+.div-underline:hover .text-underline{
+    color: #08444F !important;
+    text-decoration: underline;
+}
+.color-text {
+    /* border-top: 2px solid #E2DDCA ; */
+    color: inherit;
+    text-decoration: none;
+    /* background-image: -webkit-gradient(linear, left top, left bottom, from(#FEF5DF), to(#FEF5DF)); */
+    background-image: linear-gradient(to bottom, #FEF5DF 0%, #FEF5DF 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0;
+    background-position: 0 111%;
+    -webkit-transition: background-size .25s ease-in;
+    transition: background-size .25s ease-in;
+    padding: 2px 2px 0px 0;
+    border-bottom: 2px solid #E2DDCA;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.color-text:hover {
+    color: #08444F !important;
+    background-size: 100% 100%;
+    cursor: pointer;
+    border-bottom: 2px solid #f8cd5f;
+}
+
+
+/* Cover for every Topic */
+
+
+.img-bg{
+    background-image: url(assets/images/inteligencia-artificial-en-la-seguridad-industrial-2.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.bg-img{
+    position: relative;
+    z-index: 2;
+}
+.img-bg::before{
+    content: '';
+    position: absolute;
+    background-color: #08444f;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+.img-bg-courses{
+    background-image: url(assets/images/hero-aspectos-psicologicos-dolor.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.bg-img-courses{
+    position: relative;
+    z-index: 2;
+}
+.img-bg-courses::before{
+    content: '';
+    position: absolute;
+    background-color: var(--main-color);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+.img-bg-articles{
+    background-image: url(assets/images/sinossi-2000x800.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.bg-img-articles{
+    position: relative;
+    z-index: 2;
+}
+.img-bg-articles::before{
+    content: '';
+    position: absolute;
+    background-color: var(--main-color);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+.img-bg-about{
+    background-image: url(assets/images/CTA-2000x800_186521656.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.bg-img-about{
+    position: relative;
+    z-index: 2;
+}
+.img-bg-about::before{
+    content: '';
+    position: absolute;
+    background-color: var(--main-color);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+.img-bg-contact{
+    background-image: url(assets/images/contactus-banner-2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.bg-img-contact{
+    position: relative;
+    z-index: 2;
+}
+.img-bg-contact::before{
+    content: '';
+    position: absolute;
+    background-color: var(--main-color);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+
+.bg-img-signup{
+    position: relative;
+    z-index: 2;
+}
+.img-bg-signup::before{
+    content: '';
+    position: absolute;
+    background-color: var(--main-color);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+
+/* ------------------------------------------End of covering----------------------------------------------- */
+/* .box-hover-shadow{
+    background-color: var(--second-color);
+    box-shadow: 5px 200px 245px -15px rgba(20,222,67,0.61) inset;
+-webkit-box-shadow: 5px 200px 245px -15px rgba(20,222,67,0.61) inset;
+-moz-box-shadow: 5px 200px 245px -15px rgba(20,222,67,0.61) inset;
+}
+.box-hover-shadow2{
+    background-color: var(--second-color);
+    box-shadow: 5px 200px 245px -15px rgba(20,222,67,0.61) inset;
+-webkit-box-shadow: 5px 200px 245px -15px rgba(20,222,67,0.61) inset;
+-moz-box-shadow: 5px 200px 245px -15px rgba(20,222,67,0.61) inset;
+
+    /* background-color: var(--main-color) !important;
+    /* box-shadow: #198754 inset 100px 0px 80px 80px; */
+    /* box-shadow: 0 24px 38px rgba(81,107,117,.21); */
+    /* box-shadow: -200px -49px 104px -3px rgba(20,222,67,0.61) inset;
+-webkit-box-shadow: -200px -49px 104px -3px rgba(20,222,67,0.61) inset;
+-moz-box-shadow: -200px -49px 104px -3px rgba(20,222,67,0.61) inset;  }*/ 
+
+
+
+.bg-circle img{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+}
+
+.footer-bg{
+    background-color: #08444f;
+}
+.underline-border h4 , .underline-border h3{
+    text-decoration: underline ;
+    text-decoration-color: var(--light-color);
+    text-decoration-thickness: 2px;
+}
+hr{
+    border: 2px solid;
+    border-color: var(--main-color);
+}
+
+
+@media all and (max-width:575px){
+
+    .media-query  {
+        width: 100% !important;
+    }
+    .media-query p {
+        font-size: 28px !important;
+        
+    }
+    .media-query h3{
+        font-size: 30px !important;
+    
+    }
+
+}
+
+
+
+
+
+/* ---------------------------------------------------------QUIZ------------------------------------------------------ */
+/* Add this to your CSS file or style block */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .fade-out {
+    animation: fadeOut 0.3s ease-in-out;
+    animation-fill-mode: forwards;
+    display: none;
+  }
+  
+/* Quiz.css */
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------Course Topics------------------------------------ */
+.courses-hover{
+    transition: all 0.8s ease-in-out;
+}
+.courses-hover:hover{
+    border-radius: 10px;
+    background-color:var(--light-color);
+    box-shadow: 0 24px 38px rgba(81,107,117,.21);
+}
+.img-hover-hidden{
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.8s ease-in-out;
+}
+.img-hover img{
+    opacity: 0.6;
+    transition: all 0.8s ease-in-out;
+}
+.img-hover:hover img{
+    opacity: 1;
+    transform: scale(1.1);
+}
+/* -------------------------------------END OF COURSE TOPICS------------------------------------ */
+
+
+
+
+
+
+/* ------------------------------------Instructor---------------------------------------------- */
+
+  .team-container{
+    position:relative;
+    width:240px;
+    height:300px;
+    overflow:hidden
+  }
+  .team-container:before{
+    content:'';
+    position:absolute;
+    left:170%;
+    z-index:1;
+    height:100%;
+    width:100%;
+    background:rgba(255,255,255,0.2);
+    transform:skewX(45deg);
+    transition:.8s;
+  }
+  .team-container:hover:before{
+    left:-170%;
+    transition-delay:.8s;
+  }
+  .team-container img{
+    width:100%;
+    height:100%;
+    filter:grayscale(100%);
+    transition:1s
+  }
+  .team-container:hover img{
+    filter:grayscale(0);
+    transform:scale(1.2)
+  }
+  .team-container h4{
+    position:absolute;
+    background: var(--main-color);
+    width:100%;
+    margin:0;
+    text-align:center;
+    color:#fff;
+    bottom:0;
+    line-height:40px;
+    transition:.5s;
+    transform:perspective(300px)rotateX(90deg);
+    transform-origin:bottom;
+  }
+  .team-container:hover h4{
+    transform:perspective(300px)rotateX(0deg);
+  }
+  .team-container ul{
+    position:absolute;
+    top:0;
+    left:0;
+    margin:0;
+    padding:0;
+    list-style:none;
+  }
+  .team-container ul li{
+    background: var(--second-color);
+    width:40px;
+    height:40px;
+    text-align:center;
+    line-height:40px;
+    border-bottom:1px solid rgba(0,0,0,0.5);
+    transform:perspective(1000px) rotateY(90deg);
+    transition:.5s;
+    transform-origin:left;
+  }
+  .team-container ul li .fab{
+    color:#fff;
+  }
+  .team-container:hover ul li{
+    transform:rotateX(0deg);
+  }
+  .team-container ul li:nth-child(1){
+    transition-delay:.2s;
+  }
+  .team-container ul li:nth-child(2){
+    transition-delay:.4s;
+  }
+  .team-container ul li:nth-child(3){
+    transition-delay:.6s;
+  }
+/* ------------------------------------End of Instructor---------------------------------------------- */
+
+
+.main-body {
+    padding: 15px;
+}
+.card {
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1rem;
+}
+
+.gutters-sm {
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+.gutters-sm>.col, .gutters-sm>[class*=col-] {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+.mb-3, .my-3 {
+    margin-bottom: 1rem!important;
+}
+
+.bg-gray-300 {
+    background-color: #e2e8f0;
+}
+.h-100 {
+    height: 100%!important;
+}
+.shadow-none {
+    box-shadow: none!important;
+}
+

@@ -1,0 +1,24 @@
+.Home {}
+
+
+.header{
+  background-image: url(../../assets/images/GoMo-Health-Website-Background-Isometric-Clouds-2200x1316.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+}
+.header .layout{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  /* margin-top: 50px; */
+}
+
