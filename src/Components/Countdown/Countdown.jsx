@@ -49,7 +49,7 @@ const Countdown = () => {
     if (time === null) return 'Calculating...';
     if (time === 0) return 'Countdown finished';
 
-    const days = Math.floor(time / (1000 * 60 * 60 * 24));
+    const days = Math.floor(time / (1000 * 60 * 60 * 24) - 7);
     const hours = Math.floor((time / (1000 * 60 * 60)) % 24);
     const minutes = Math.floor((time / (1000 * 60)) % 60);
     const seconds = Math.floor((time / 1000) % 60);
