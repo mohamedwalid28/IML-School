@@ -81,7 +81,7 @@ export default function Home() {
       <div className={styles.layout}>
         <div className='w-50 media-query'>
           <span className='fs-2 fw-bolder' ref={el}></span>
-          <h3 className="fw-bolder text-larger" >Best Online Education Expertise in Healthcare Management</h3>
+          <h3 className="fw-bolder text-larger" >Best Experience in Health Profession Education</h3>
           <p className='mt-4 fs-3 fw-bold '>More than 30,000 healthcare providers have switched to IML SCHOOL for education </p>
           <button className='btn btn-success me-3 animate__animated animate__fadeInLeft animate__slow'>
             <Link to='courses' className='text-white'>Get Courses</Link>
@@ -197,7 +197,7 @@ export default function Home() {
                 </div>
                 <div>
                   <span className='text-main fs-1'>100<span className='fs-3'>+</span> </span>
-                  <p>ACTIVE COURSES</p>
+                  <p>INTERACTIVE COURSES</p>
                 </div>
               </div>
              
@@ -209,7 +209,7 @@ export default function Home() {
                 
                 <div>
                   <span className='text-main fs-1'>2<span className='fs-3'>+</span> </span>
-                  <p>COUNTRY REACHED</p>
+                  <p>COUNTRIES REACHED</p>
                 </div>
              </div>
 
